@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fanco Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">Fanco Shop</h2>
+          <p class="sub-heading">Hoodie & T-Shirt</p>
+        </div>
+        <div class="features feature-1">
+          <h4 class="price">IDR 150K</h4>
+          <p class="item">Hoodie</p>
+        </div>
+
+        <div class="features feature-2">
+          <h4 class="price">IDR 95K</h4>
+          <p class="item">T-Shirt</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>Fanco Shop</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="">Contsct</a></li>
+        </ul>
+      </nav>
+
+      <section class="services" id="about">
+        <div class="service">
+          <div class="icon">💻</div>
+          <h3>Coding</h3>
+          <p>Saya suka dengan Coding. Yaa... walupuan Codingannya yang tidak terlalu complex, tapi saya terus belajar coding suapaya saya bisa membuat website yang keren dan menarik.</p>
+        </div>
+        <div class="service">
+          <div class="icon">👘</div>
+          <h3>Merchandise</h3>
+          <p>Merchandise ini saya buat suapaya saya ada pemasukan sampinagn.</p>
+        </div>
+        <div class="service">
+          <div class="icon">💡</div>
+          <h3>Tutorial</h3>
+          <p>Ini masih rencara, tapi kalo saya sudah jago "mungkin" saya bakal buat tutorial.</p>
+        </div>
+      </section>
+
+      <section id="products">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <h2>Products</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/baju1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">T-Shirt ini sangatlah enak untuk dipakai dan ditambah dengan desain yang tidak telalu mencolok, dan kalian hanyak mengluarkan 95K saja, sudah mendaptkan T-Shirt ini.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/produk1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Hoodie ini tidak kalah enak nya seperti T-Shirt, dan desain nya juga tidak terlalu mencolok. hanya dengan 150K saja kalian sudah bisa medaptkan hoodie ini. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/produk2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">kalo yang ini cocok untuk para wanita, sama seperti yang lain nya desain nya tidak mencolok harga nya pun terjangkau hanya 150K saja.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
